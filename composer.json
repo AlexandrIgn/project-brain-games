@@ -3,6 +3,7 @@
     "description": "First project on hexlet",
     "type": "project",
     "keywords":    ["brain-games"],
+    "minimum-stability": "dev",
     "bin": [
         "bin/brain-games"],
     "autoload": {
