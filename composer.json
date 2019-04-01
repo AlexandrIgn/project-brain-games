@@ -8,7 +8,6 @@
     "autoload": {
             "files": ["src/Cli.php"]
         },
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Alexandr Ignatyev",
