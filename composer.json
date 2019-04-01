@@ -1,0 +1,14 @@
+{
+    "name": "alexandrign/brain-games",
+    "type": "library",
+    "bin": [
+        "bin/brain-games"],
+    "authors": [
+        {
+            "name": "Alexandr Ignatyev",
+            "email": "asignatyev@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
