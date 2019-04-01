@@ -1,14 +1,21 @@
 {
     "name": "alexandrign/brain-games",
-    "type": "library",
+    "description": "First project on hexlet",
+    "type": "project",
+    "keywords":    ["brain-games"],
     "bin": [
         "bin/brain-games"],
+    "autoload": {
+            "files": ["src/Cli.php"]
+        },
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Alexandr Ignatyev",
             "email": "asignatyev@mail.ru"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "dev-master"
+    }
 }
