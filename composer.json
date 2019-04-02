@@ -5,6 +5,9 @@
     "keywords":    ["brain", "games", "project"],
     "minimum-stability": "dev",
     "bin":  ["bin/brain-games"],
+    "scripts": {
+        "phpcs": "phpcs"
+        },
     "autoload": {
             "files": ["src/Cli.php"]
         },
@@ -16,5 +19,8 @@
     ],
     "require": {
         "wp-cli/php-cli-tools": "*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
     }
 }
