@@ -2,10 +2,9 @@
     "name": "alexandrign/brain-games",
     "description": "First project on hexlet",
     "type": "project",
-    "keywords":    ["brain-games"],
+    "keywords":    ["brain", "games", "project"],
     "minimum-stability": "dev",
-    "bin": [
-        "bin/brain-games"],
+    "bin":  ["bin/brain-games"],
     "autoload": {
             "files": ["src/Cli.php"]
         },
