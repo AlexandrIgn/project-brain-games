@@ -4,12 +4,18 @@
     "type": "project",
     "keywords":    ["brain", "games", "project"],
     "minimum-stability": "dev",
-    "bin":  ["bin/brain-games"],
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even"
+      ],
     "scripts": {
         "phpcs": "phpcs"
         },
     "autoload": {
-            "files": ["src/Cli.php"]
+            "files": [
+                "src/Cli.php",
+                "src/BrainEven.php"
+            ]
         },
     "authors": [
         {
