@@ -9,32 +9,26 @@ function isEven($num)
 {
     return $num % 2 === 0;
 }
-function getCorrectAnswer($num)
-{
-    return isEven($num) ? 'yes' : 'no';
-}
+
 function run()
 {
     line('Welcome to the Brain Games!');
     line("Answer \"yes\" if number even otherwise answer \"no\".\n");
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    $questionСounter = 0;
-    for ($i = 1; $i <= 3; $i++) {
-        $randomNum = rand(1, 99);
-        line("Question: %s", $randomNum);
-        $correctAnswer = getCorrectAnswer($randomNum);
+    $numberOfQuestions = 3;
+    for ($i = 1; $i <= $numberOfQuestions; $i++) {
+        $question = rand(1, 99);
+        $correctAnswer = isEven($question) ? 'yes' : 'no';
+        line("Question: %s", $question);
         $userAnswer = prompt('Your answer');
-        if ($userAnswer === $correctAnswer) {
+        if ($userAnswer == $correctAnswer) {
             line('Correct!');
-            $questionСounter += 1;
         } else {
             line("'$userAnswer' is wrong answer ;(. Correct answer was '$correctAnswer'.");
             line("Let's try again, %s", $name);
-            break;
-        }
-        if ($questionСounter === 3) {
-            line("Congratulations, %s!", $name);
+            return;
         }
     }
+    line("Congratulations, %s!", $name);
 }
