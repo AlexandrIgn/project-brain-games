@@ -1,10 +1,13 @@
 <?php
 
-namespace BrainGames\BrainGsd;
+namespace BrainGames\BrainGcd;
 
 use function \cli\line;
 use function \cli\prompt;
 use function BrainGames\Engine\run;
+
+const ANNOTATION =  'Find the greatest common divisor of given numbers.';
+
 //Euclidean algorithm
 function getGcd($num1, $num2)
 {
@@ -17,15 +20,14 @@ function getGcd($num1, $num2)
     }
     return abs($num1 + $num2);
 }
-function runBrainGsd()
+function runBrainGcd()
 {
-    $annotation = 'Find the greatest common divisor of given numbers.';
     $getQuestionAndAnswer = function () {
-        $num1 = rand(1, 15);
-        $num2 = rand(1, 15);
+        $num1 = rand(1, 99);
+        $num2 = rand(1, 99);
         $question = "{$num1} {$num2}";
         $answer = getGcd($num1, $num2);
         return [$question, $answer];
     };
-    run($getQuestionAndAnswer, $annotation);
+    run($getQuestionAndAnswer, ANNOTATION);
 }

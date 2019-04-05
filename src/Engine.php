@@ -5,6 +5,8 @@ namespace BrainGames\Engine;
 use function \cli\line;
 use function \cli\prompt;
 
+const NUMBER_OF_QUESTION = 3;
+
 function run($getQuestionAndAnswer, $annotation)
 {
     line('Welcome to the Brain Games!');
@@ -12,11 +14,8 @@ function run($getQuestionAndAnswer, $annotation)
 
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    $numberOfQuestions = 3;
-    for ($i = 1; $i <= $numberOfQuestions; $i++) {
-        $questionAndAnswer = $getQuestionAndAnswer();
-        $question = $questionAndAnswer[0];
-        $correctAnswer = $questionAndAnswer[1];
+    for ($i = 1; $i <= NUMBER_OF_QUESTION; $i++) {
+        [$question, $correctAnswer] = $getQuestionAndAnswer();
         line("Question: %s", $question);
         $userAnswer = prompt('Your answer');
         if ($userAnswer == $correctAnswer) {

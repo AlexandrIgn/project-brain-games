@@ -8,7 +8,8 @@
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-progres"
       ],
     "scripts": {
         "phpcs": "phpcs"
@@ -18,7 +19,8 @@
                 "src/Cli.php",
                 "src/games/BrainEven.php",
                 "src/games/BrainCalc.php",
-                "src/games/BrainGsd.php",
+                "src/games/BrainGcd.php",
+                "src/games/BrainProgres.php",
                 "src/Engine.php"        
                 ]
         },
