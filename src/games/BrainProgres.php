@@ -12,7 +12,7 @@ const ANNOTATION =  'What number is missing in the progression?';
 function getProgression()
 {
     $progression = [];
-    for ($i = rand(1, 99); count($progression) <= 10; $i=$i + 2) {
+    for ($i = rand(1, 99); count($progression) <= 10; $i = $i + 2) {
         $progression[] = $i;
     }
     return $progression;
