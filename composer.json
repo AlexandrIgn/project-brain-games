@@ -9,7 +9,7 @@
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
-        "bin/brain-progres"
+        "bin/brain-progression"
       ],
     "scripts": {
         "phpcs": "phpcs"
