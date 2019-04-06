@@ -1,3 +1,3 @@
 [![Build Status](https://travis-ci.com/AlexandrIgn/project-lvl1-s470.svg?branch=master)](https://travis-ci.com/AlexandrIgn/project-lvl1-s470)
 [![Maintainability](https://api.codeclimate.com/v1/badges/25baa8252e2e8ff26f8b/maintainability)](https://codeclimate.com/github/AlexandrIgn/project-lvl1-s470/maintainability)
-[![asciicast](https://asciinema.org/a/pqZ9UwiWk4zsferwVJp21Bqq4.svg)](https://asciinema.org/a/pqZ9UwiWk4zsferwVJp21Bqq4)
+[![asciicast](https://asciinema.org/a/MLgJDP7ykgIzsJAj0T0v9Ih5T.svg)](https://asciinema.org/a/MLgJDP7ykgIzsJAj0T0v9Ih5T)
