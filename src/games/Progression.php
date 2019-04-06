@@ -23,7 +23,7 @@ function makeProgression()
 function runProgression()
 {
     $getQuestionAndAnswer = function () {
-        $progression = getProgression();
+        $progression = makeProgression();
         $randomKeyOfProgression = array_rand($progression);
         $answer = $progression[$randomKeyOfProgression];
         $progression[$randomKeyOfProgression] = '...';
