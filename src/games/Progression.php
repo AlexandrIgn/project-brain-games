@@ -1,23 +1,26 @@
 <?php
 
-namespace BrainGames\BrainProgres;
+namespace BrainGames\Progression;
 
 use function \cli\line;
 use function \cli\prompt;
 use function BrainGames\Engine\run;
 
 const ANNOTATION =  'What number is missing in the progression?';
+const LENGTH_PROGRESSION = 10;
 
 //Euclidean algorithm
 function getProgression()
 {
     $progression = [];
-    for ($i = rand(1, 99); count($progression) <= 10; $i = $i + 2) {
-        $progression[] = $i;
+    $beginNumberProgrission = rand(1, 99);
+    $stepProgression = rand(1, 5);
+    for ($i = 0; $i < LENGTH_PROGRESSION; $i++) {
+        $progression[] = $beginNumberProgrission + $stepProgression * $i;
     }
     return $progression;
 }
-function runBrainProgres()
+function runProgression()
 {
     $getQuestionAndAnswer = function () {
         $progression = getProgression();

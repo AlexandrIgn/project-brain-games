@@ -1,12 +1,12 @@
 <?php
 
-namespace BrainGames\BrainCalc;
+namespace BrainGames\Calc;
 
 use function \cli\line;
 use function \cli\prompt;
 use function BrainGames\Engine\run;
 
-const ANNOTATION = 'What is the result of the expression?.';
+const ANNOTATION = 'What is the result of the expression?';
 const OPERATORS = ['*', '+', '-'];
 
 function makeCalc(int $num1, int $num2, $operator): int
@@ -20,10 +20,9 @@ function makeCalc(int $num1, int $num2, $operator): int
             return $num1 - $num2;
     }
 }
-function runBrainCalc()
+function runCalc()
 {
     $getQuestionAndAnswer = function () {
-        $operators = ['*', '+', '-'];
         $randomOperators = OPERATORS[array_rand(OPERATORS)];
         $randomNum1 = rand(1, 9);
         $randomNum2 = rand(1, 9);

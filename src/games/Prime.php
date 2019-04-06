@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\BrainPrime;
+namespace BrainGames\Prime;
 
 use function \cli\line;
 use function \cli\prompt;
@@ -22,7 +22,7 @@ function isPrime(int $num)
 
     return true;
 }
-function runBrainPrime()
+function runPrime()
 {
     $getQuestionAndAnswer = function () {
         $question = rand(1, 99);

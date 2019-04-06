@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\BrainGcd;
+namespace BrainGames\Gcd;
 
 use function \cli\line;
 use function \cli\prompt;
@@ -20,7 +20,7 @@ function getGcd($num1, $num2)
     }
     return abs($num1 + $num2);
 }
-function runBrainGcd()
+function runGcd()
 {
     $getQuestionAndAnswer = function () {
         $num1 = rand(1, 99);

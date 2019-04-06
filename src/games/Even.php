@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\BrainEven;
+namespace BrainGames\Even;
 
 use function \cli\line;
 use function \cli\prompt;
@@ -12,7 +12,7 @@ function isEven($num)
 {
     return $num % 2 === 0;
 }
-function runBrainEven()
+function runEven()
 {
     $getQuestionAndAnswer = function () {
         $question = rand(1, 99);
