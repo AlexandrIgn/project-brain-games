@@ -9,8 +9,7 @@ use function BrainGames\Engine\run;
 const ANNOTATION =  'What number is missing in the progression?';
 const LENGTH_PROGRESSION = 10;
 
-//Euclidean algorithm
-function getProgression()
+function makeProgression()
 {
     $progression = [];
     $beginNumberProgrission = rand(1, 99);
@@ -20,6 +19,7 @@ function getProgression()
     }
     return $progression;
 }
+
 function runProgression()
 {
     $getQuestionAndAnswer = function () {

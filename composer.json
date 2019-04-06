@@ -1,41 +1,45 @@
-{
-    "name": "alexandrign/brain-games",
-    "description": "First project on hexlet",
-    "type": "project",
-    "keywords":    ["brain", "games", "project"],
-    "minimum-stability": "dev",
-    "bin": [
+{  
+    "name":"alexandrign/brain-games",
+    "description":"First project on hexlet",
+    "type":"project",
+    "keywords":[  
+        "brain",
+        "games",
+        "project"
+    ],
+    "minimum-stability":"dev",
+    "bin":[  
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
         "bin/brain-gcd",
         "bin/brain-progression",
         "bin/brain-prime"
-      ],
-    "scripts": {
-        "phpcs": "phpcs"
-        },
-    "autoload": {
-            "files": [
-                "src/Cli.php",
-                "src/games/Even.php",
-                "src/games/Calc.php",
-                "src/games/Gcd.php",
-                "src/games/Progression.php",
-                "src/games/Prime.php",
-                "src/Engine.php"        
-                ]
-        },
-    "authors": [
-        {
-            "name": "Alexandr Ignatyev",
-            "email": "asignatyev@mail.ru"
+    ],
+    "scripts":{  
+        "phpcs":"phpcs"
+    },
+    "autoload":{  
+        "files":[  
+            "src/Cli.php",
+            "src/games/Even.php",
+            "src/games/Calc.php",
+            "src/games/Gcd.php",
+            "src/games/Progression.php",
+            "src/games/Prime.php",
+            "src/Engine.php"
+        ]
+    },
+    "authors":[  
+        {  
+            "name":"Alexandr Ignatyev",
+            "email":"asignatyev@mail.ru"
         }
     ],
-    "require": {
-        "wp-cli/php-cli-tools": "*"
+    "require":{  
+        "wp-cli/php-cli-tools":"*"
     },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "*"
+    "require-dev":{  
+        "squizlabs/php_codesniffer":"*"
     }
 }

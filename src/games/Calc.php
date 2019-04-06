@@ -20,14 +20,15 @@ function makeCalc(int $num1, int $num2, $operator): int
             return $num1 - $num2;
     }
 }
+
 function runCalc()
 {
     $getQuestionAndAnswer = function () {
-        $randomOperators = OPERATORS[array_rand(OPERATORS)];
+        $randomOperator = OPERATORS[array_rand(OPERATORS)];
         $randomNum1 = rand(1, 9);
         $randomNum2 = rand(1, 9);
-        $question = "{$randomNum1} {$randomOperators} {$randomNum2}";
-        $answer = makeCalc($randomNum1, $randomNum2, $randomOperators);
+        $question = "{$randomNum1} {$randomOperator} {$randomNum2}";
+        $answer = makeCalc($randomNum1, $randomNum2, $randomOperator);
         return [$question, $answer];
     };
     run($getQuestionAndAnswer, ANNOTATION);

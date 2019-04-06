@@ -8,7 +8,6 @@ use function BrainGames\Engine\run;
 
 const ANNOTATION =  'Find the greatest common divisor of given numbers.';
 
-//Euclidean algorithm
 function getGcd($num1, $num2)
 {
     while ($num1 != 0 && $num2 != 0) {
@@ -20,6 +19,7 @@ function getGcd($num1, $num2)
     }
     return abs($num1 + $num2);
 }
+
 function runGcd()
 {
     $getQuestionAndAnswer = function () {
