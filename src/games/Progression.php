@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Progression;
+namespace BrainGames\games\Progression;
 
 use function \cli\line;
 use function \cli\prompt;
@@ -12,10 +12,10 @@ const LENGTH_PROGRESSION = 10;
 function makeProgression()
 {
     $progression = [];
-    $beginNumberProgrission = rand(1, 99);
-    $stepProgression = rand(1, 5);
+    $start = rand(1, 99);
+    $step = rand(1, 5);
     for ($i = 0; $i < LENGTH_PROGRESSION; $i++) {
-        $progression[] = $beginNumberProgrission + $stepProgression * $i;
+        $progression[] = $start + $step * $i;
     }
     return $progression;
 }
