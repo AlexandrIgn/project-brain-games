@@ -2,7 +2,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/25baa8252e2e8ff26f8b/maintainability)](https://codeclimate.com/github/AlexandrIgn/project-lvl1-s470/maintainability)
 
 # Игры разума <h2> 
-Данный проект реализован в рамках учебной программы на портале [Хеклет](https://ru.hexlet.io/pages/about). В рамках проекта реализоваy набор мини-игр, запускаемых из консоли:
+Данный проект реализован в рамках учебной программы на портале [Хеклет](https://ru.hexlet.io/pages/about). В рамках проекта реализован набор мини-игр, запускаемых из консоли:
 1. "Калькулятор".
 2. "Проверка на четность".
 3. "Наибольший общий делитель".
