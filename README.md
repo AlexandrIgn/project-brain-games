@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/AlexandrIgn/project-lvl1-s470.svg?branch=master)](https://travis-ci.com/AlexandrIgn/project-lvl1-s470)
+[![Build Status](https://travis-ci.com/AlexandrIgn/project-brain-games.svg?branch=master)](https://travis-ci.com/AlexandrIgn/project-brain-games)
 [![Maintainability](https://api.codeclimate.com/v1/badges/25baa8252e2e8ff26f8b/maintainability)](https://codeclimate.com/github/AlexandrIgn/project-lvl1-s470/maintainability)
 
 # Игры разума <h2> 
